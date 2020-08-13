@@ -1,12 +1,12 @@
 var express=require("express");
 var app=express();
-var port=80;
+var port=process.env.port|| 8080;
 var path=require("path");
 var mongoose=require("mongoose");
 const { stringify } = require("querystring");
 app.use("/static",express.static("static"));
 app.use(express.urlencoded());
-mongoose.connect("mongodb://localhost/customer",{useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/customer",{useNewUrlParser: true, useUnifiedTopology: true});
 
 mongoose.connection.once('open',function(){
     console.log("we r connected to db");
