@@ -1,6 +1,6 @@
 var express=require("express");
 var app=express();
-var port=process.env.port|| 8080;
+var PORT=process.env.PORT|| 8080;
 var path=require("path");
 var mongoose=require("mongoose");
 const { stringify } = require("querystring");
@@ -49,6 +49,6 @@ app.post('/',(req,res)=>{
         console.log(error);
     });
 });
-app.listen(port,()=>{
-  console.log(`your server is ready at port ${port}`);
+app.listen(PORT,()=>{
+  console.log(`your server is ready at port ${PORT}`);
 })

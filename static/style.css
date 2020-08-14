@@ -1,12 +1,9 @@
-.navitem li a{
+.navitem a{
     text-decoration: none;
     color: white;
 
 }
-.navbtn:active{
-    background-color: black;
-    
-}
+
 .head{
     height: 870px;
     background: url(../static/vvv.gif) no-repeat center center/cover;
