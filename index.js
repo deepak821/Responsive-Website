@@ -34,21 +34,6 @@ app.get("/",(req,res)=>{
     res.sendFile(path.join(__dirname,'views','index.html'));
 })
 
-app.post('/',(req,res)=>{
-    var mydata=new contact({
-        name:req.body.name,
-        email:req.body.email,
-        area:req.body.area,
-        type:req.body.type,
-        phone:req.body.phone
-    })
-    mydata.save().then(()=>{
-        console.log("successful");
-        res.sendFile(path.join(__dirname,'views','index.html'));
-    }).catch((error)=>{
-        console.log(error);
-    });
-});
 app.listen(PORT,()=>{
   console.log(`your server is ready at port ${PORT}`);
 })

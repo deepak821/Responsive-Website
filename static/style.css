@@ -39,7 +39,7 @@ video{
       background-color: transparent;
       transition: 0.25s;
       border-radius: 15px;
-      width: 63px;
+      width: 200px;
 }
 .btn a{
     text-decoration: none;
@@ -50,7 +50,7 @@ video{
     border:2px solid #3498db;
     background: linear-gradient(red, blue);;
     color: white;
-    width: 83px;
+    width: 250px;
 }
 .cont{
     min-width: 100%;
@@ -81,13 +81,13 @@ input[type="email"]{
     border-radius: 20px;
 }
 .sub{
-  color: black;
+  color: white;
   font-weight: bold;
   background-color:transparent;
   padding: 5px;
   border:2px solid rgb(0, 255, 106);
   border-radius: 10px;
-  width: 110px;
+  width: 130px;
   outline: none;
 }
 .sub a{
@@ -110,6 +110,9 @@ input[type="email"]{
 .social img{
     width: 34px;
 }
+
+
+
 @media only screen and (max-width:425px){
    .formm{
      display: flex;

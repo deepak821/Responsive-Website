@@ -21,7 +21,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="../static/style.css">
 </head>
 
@@ -56,8 +56,9 @@
       <h4 id="home">HOME</h4>
       <div class="container">
         <h1 class="display-4">JKINTERIOR</h1>
-        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-        <button class="btn"><a href="#form">JOIN</a></button>
+        <p class="lead">"Real comfort, visual and physical, is vital to every room."</p>
+        <p> – Mark Hampton</p>
+        <button class="btn"><a href="#form">Send Us Quotation</a></button>
       </div>
     </div>
 
@@ -67,14 +68,10 @@
         <div class="col-lg-6 col-md-6 col-12 wow animate__animated animate__bounceInLeft animate__slow"
           style="text-align: center; padding: 30px;">
           <h1>ABOUT US</h1>
-          <p style="font-weight: 400;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed est explicabo atque
-            facere qui obcaecati facilis aut? Consequuntur laudantium quod, suscipit quasi nisi culpa vitae minus,
-            assumenda necessitatibus magnam ut libero eaque! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Odit consequatur impedit ipsam inventore provident possimus, nobis asperiores qui minima. Aperiam explicabo
-            aliquid exercitationem pariatur, quas numquam quisquam magnam atque, excepturi error itaque. Lorem ipsum,
-            dolor sit amet consectetur adipisicing elit. Voluptas maxime adipisci voluptatum, soluta temporibus autem
-            impedit id, eaque dolorem, nam facere quas aperiam amet harum quos mollitia cum obcaecati tempora eum
-            perspiciatis!</p>
+          <p style="font-weight: 400;">I am an interior home designer,specified with works that comes under home
+            painting,marble fittings,furniture(ward rone,wall cabinet) designing, modular kitchen, wash room
+            designing,etc.
+            Please contact me for any such pending quieres or work related to this field.</p>
         </div>
         <div class="col-lg-6 col-md-6 col-12 wow animate__animated animate__bounceInRight animate__slow">
           <img src="../static/chair.jpg" alt="" class="img-fluid">
@@ -124,59 +121,82 @@
       </div>
     </div>
     <div class="box">
-      <h1 id="form" class="wow animate__animated animate__heartBeat" style="text-align: center;">FORM</h1>
-    <form class="container" action="/" method="POST" >
-      <div class="form-group">
-        <label for="exampleInputName" class="text-white"><h5>NAME</h5></label>
-        <input type="text" name="name" class="form-control" id="exampleInputName" aria-describedby="nameHelp">
-      </div>
-      <div class="form-group">
-      <label for="exampleInputEmail1" class="text-white"><h5>Email address</h5></label>
-      <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <small id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group formm" style=" display:flex;">
-    <label for="inputArea" class="sr-only">AREA</label>
-    <input type="text" name="area" class="form-control area" id="inputArea" placeholder="AREA">
-    <label for="exampleType" class="sr-only">type</label>
-    <select name="type" class="type" id="exampleType" style="margin-left: 15px;">
-      <option value="" >HOME</option>
-      <option value="">KITCHEN</option>
-      <option value="">OFFICE</option>
-    </select>
-    <label for="inputphoneno" class="sr-only">phone</label>
-    <input type="number" name="phone" style="margin-left: 15px;" id="inputphoneno" placeholder="MOBILE">
-  </div>
-  <button class="sub"><a href="#form"> SUBMIT</a></button>
-  <h4 class="show" style="display: none; color: white;">THANKS FOR SUBMITING!</h4>
-  </form>
-</div>
-<div class="cont" style="text-align: center;">
-  <h4 id="contact" class="wow animate__animated animate__heartBeat" style="color: white;">CONTACT US</h4>
-  <div class="container contact">
-    <h6>PHONE:99999999999</h6>
-    <br>
-    <h6 class="text-muted">49 Smith St.</h6>
-    <h6 class="text-muted">Saint Cloud, MN 56301</h6>
-    <br>
-    <p>__________________</p>
-    <a href="" style="text-decoration: none; color:rgb(0, 255, 106) ;">pandeydeepak821@gmail.com</a>
-    <div class="social">
-      <a href="https://www.facebook.com/profile.php?id=100005101688013" target="blank"><img src="../static/fb.svg" alt=""></a>
-      <a href="https://www.instagram.com/deepsjacker/" target="blank"><img src="../static/instagram.svg" alt=""></a>
-      <a href="https://github.com/deepak821" target="blank"><img src="../static/github.svg" alt=""></a>
+      <h1 id="form" class="wow animate__animated animate__heartBeat" style="text-align: center;">QUOTATION</h1>
+      <form autocomplete="off" class="container" style="margin-top: 4rem;">
+        <div class="form-group">
+          <input
+            type="text"
+            name="Name"
+            id="name"
+            class="form-control"
+            placeholder="Your Name *"
+            value=""
+            required=""
+          />
+        </div>
+        <div class="form-group">
+          <textarea 
+          class="form-control" 
+          placeholder="Details" 
+          value="" 
+          id="details" 
+          name="Details" 
+          rows="4" 
+          cols="50"></textarea>
+        </div>
+        <div class="form-group formm" style=" display:flex;">
+          <input type="text" name="Area" class="form-control area" value="" id="area" placeholder="AREA">
+          <select name="Service" class="type" value="" id="service" style="margin-left: 15px;">
+            <option value="" disabled selected hidden>Services</option>
+            <option value="1">FALSE CEILING GYPSUM BOARD</option>
+            <option value="2">MODULAR KITCHEN(WPC BOARD)</option>
+            <option value="3">HOME/OUTSIDE PAINTING</option>
+            <option value="4">WARDROBE MALFUNCTION</option>
+            <option value="5">WASHROOM MODIFICATIONS</option>
+            <option value="6">MARBEL/FLOOR TILES FITTINGS</option>
+            <option value="7">RENEWING OLD APARTMENTS</option>
+            <option value="8">FALSE CEILING DESIGN</option>
+          </select>
+          <input type="date" name="When" value="" style="margin-left: 15px;" id="when" placeholder="WHEN">
+        </div>
+        <div class="form-group">
+          <input
+            type="submit"
+            onclick="gotowhatsapp()"
+            name="submit"
+            class="sub"
+            value="WhatsApp Us"
+          />
+        </div>
+      </form>
     </div>
-  </div>
-</div>
+    <div class="cont" style="text-align: center;">
+      <h4 id="contact" class="wow animate__animated animate__heartBeat" style="color: white;">CONTACT US</h4>
+      <div class="container contact">
+        <h6>PHONE:+91 9432572472</h6>
+        <br>
+        <h6 class="text-muted">12 Dey Street, Serampore</h6>
+        <h6 class="text-muted">Hooghly, 712201</h6>
+        <h6 class="text-muted">West Bengal, India</h6>
+        <br>
+        <p>__________________</p>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jaipandey1947@gmail.com" target="_blank" style="text-decoration: none; color:rgb(0, 255, 106) ;">jaipandey1947@gmail.com</a>
+        <div class="social">
+          <a href="https://www.facebook.com/profile.php?id=100005101688013" target="blank"><img src="../static/fb.svg"
+              alt=""></a>
+          <a href="https://wa.me/919432572472?text=Hi%20There!" target="blank"><img src="https://trickuweb.com/whatsapp.png" alt=""></a>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 
 <script>
-  $(document).ready(function(){
-  $(".sub").click(function(){
-    $(".show").show();
+  $(document).ready(function () {
+    $(".sub").click(function () {
+      $(".show").show();
+    });
   });
-});
   var wow = new WOW(
     {
       boxClass: 'wow',      // animated element css class (default is wow)
@@ -193,6 +213,25 @@
     }
   );
   wow.init();
+
+  function gotowhatsapp() {
+    
+    var name = document.getElementById("name").value;
+    var details = document.getElementById("details").value;
+    var area = document.getElementById("area").value;
+    var e = document.getElementById("service");
+    var service = e.options[e.selectedIndex].text;
+    var when = document.getElementById("when").value;
+
+    var url = "https://wa.me/919432572472?text=" 
+    + "Name: " + name + "%0a"
+    + "details: " + details + "%0a"
+    + "area: " + area  + "%0a"
+    + "Service: " + service + "%0a"
+    + "when: " + when; 
+
+    window.open(url, target= "__blank")
+}
 </script>
 
 </html>
